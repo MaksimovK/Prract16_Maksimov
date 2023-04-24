@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pract16</string>
+    <string name="notLogin">Вход не выполнен</string>
+    <string name="profile_text">Профиль пользователя</string>
+    <string name="button_Loing">Войти</string>
+    <string name="button_register">Регистрация</string>
+    <string name="addAlarm">Добавить будильник</string>
+    <string name="addTask">Записать задачу</string>
+    <string name="DeleteTask">Удалить задачу</string>
+    <string name="refactorTask">Изменить задачу</string>
+    <string name="descriptionTask">Описание задачи</string>
+    <string name="data">data</string>
+    <string name="time">time</string>
+    <string name="registaer">Регистрация</string>
+    <string name="login">Имя пользователя</string>
+    <string name="email">Адрес электронной почты</string>
+    <string name="password">Пароль</string>
+    <string name="DeleteAlarm">Удалить будильник</string>
+    <string name="SaveAlarm">Сохранить будильник</string>
+    <string name="CheckEditText">Есть незаполненные поля</string>
+</resources>

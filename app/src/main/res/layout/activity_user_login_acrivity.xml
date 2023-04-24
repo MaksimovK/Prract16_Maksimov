@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLoginAcrivity"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_bias="1"
+        android:layout_gravity="top"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/registaer"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/backbutton"
+            android:layout_marginStart="170dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintVertical_bias="1"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_marginTop="224dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:hint="@string/login"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:background="@drawable/back_alarm"
+            android:layout_marginBottom="16dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:hint="@string/email"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:background="@drawable/back_alarm"
+            android:layout_marginBottom="16dp"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:hint="@string/password"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:background="@drawable/back_alarm"
+            tools:ignore="RtlSymmetry" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/registaer"
+            android:layout_marginBottom="26dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_login"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

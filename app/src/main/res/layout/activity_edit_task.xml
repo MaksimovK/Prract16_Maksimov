@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTaskActivity"
+    android:background="@color/backgroundColor"
+    android:rowCount="5"
+    android:columnCount="1"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="23dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:rowCount="1"
+        android:columnCount="2">
+
+        <TextView
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="@string/refactorTask"
+            android:textStyle="bold"
+            android:paddingVertical="10dp"/>
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:src="@drawable/backbutton"
+            android:background="@color/backgroundColor"
+            android:layout_marginStart="120dp" />
+
+    </GridLayout>
+
+    <ScrollView
+        android:layout_marginTop="65dp"
+        android:id="@+id/ScrollView_AddAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/back_alarm">
+
+        <EditText
+            android:id="@+id/NameAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/addAlarm"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:paddingTop="6dp"
+            tools:ignore="RtlSymmetry" />
+    </ScrollView>
+
+    <GridLayout
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:columnCount="2">
+
+        <ScrollView
+            android:id="@+id/ScrollView_Time"
+            android:layout_width="160dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_alarm">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/time"
+                android:textSize="18sp"
+                android:paddingStart="60dp"
+                android:paddingTop="6dp"
+                tools:ignore="RtlSymmetry" />
+        </ScrollView>
+
+        <ScrollView
+            android:layout_marginStart="50dp"
+            android:id="@+id/ScrollView_Data"
+            android:layout_width="160dp"
+            android:layout_height="32dp"
+            android:background="@drawable/back_alarm">
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/data"
+                android:textSize="18sp"
+                android:paddingStart="60dp"
+                android:paddingTop="6dp"
+                tools:ignore="RtlSymmetry" />
+
+        </ScrollView>
+
+    </GridLayout>
+
+    <ScrollView
+        android:layout_marginTop="16dp"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/back_alarm">
+
+        <EditText
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/descriptionTask"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:paddingTop="6dp"
+            tools:ignore="RtlSymmetry" />
+    </ScrollView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:rowCount="2"
+        android:columnCount="1">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_removeTask"
+            android:layout_width="312dp"
+            android:layout_height="48dp"
+            android:text="@string/DeleteTask"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/danger_button"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_addTask"
+            android:layout_width="312dp"
+            android:layout_height="48dp"
+            android:text="@string/addTask"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/button_login" />
+    </GridLayout>
+
+</GridLayout>

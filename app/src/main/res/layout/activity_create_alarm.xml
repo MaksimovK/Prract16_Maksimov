@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAlarmActivity"
+    android:background="@color/backgroundColor"
+    android:stretchColumns="*">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:rowCount="1"
+        android:columnCount="2"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp">
+
+        <TextView
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="@string/addAlarm"
+            android:textStyle="bold"
+            android:paddingVertical="10dp"/>
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:src="@drawable/backbutton"
+            android:background="@color/backgroundColor"
+            android:layout_marginStart="80dp" />
+
+    </GridLayout>
+
+    <TableRow>
+        <GridLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:columnCount="2"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="23dp"
+            android:paddingTop="10dp">
+
+            <ScrollView
+                android:id="@+id/ScrollView_Time"
+                android:layout_width="160dp"
+                android:layout_height="32dp"
+                android:background="@drawable/back_alarm">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/time"
+                    android:textSize="18sp"
+                    android:paddingStart="60dp"
+                    android:paddingTop="6dp"
+                    tools:ignore="RtlSymmetry" />
+            </ScrollView>
+
+            <ScrollView
+                android:layout_marginStart="50dp"
+                android:id="@+id/ScrollView_Data"
+                android:layout_width="160dp"
+                android:layout_height="32dp"
+                android:background="@drawable/back_alarm">
+
+                <TextView
+                    android:id="@+id/data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/data"
+                    android:textSize="18sp"
+                    android:paddingStart="60dp"
+                    android:paddingTop="6dp"
+                    tools:ignore="RtlSymmetry" />
+
+            </ScrollView>
+        </GridLayout>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textSize="16sp"
+            android:text="Повторять каждый"
+            android:textColor="@color/white"
+            android:layout_marginTop="19dp"
+            android:layout_marginStart="23dp"/>
+
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Понедельник"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:button="@drawable/custom_checkbox"
+            android:paddingLeft="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"/>
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Вторник"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:button="@drawable/custom_checkbox"
+            android:paddingLeft="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"/>
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Среда"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:button="@drawable/custom_checkbox"
+            android:paddingLeft="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"/>
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Четверг"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:button="@drawable/custom_checkbox"
+            android:paddingLeft="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"/>
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/checkbox5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Пятница"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:button="@drawable/custom_checkbox"
+            android:paddingLeft="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"/>
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/checkbox6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Суббота"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:button="@drawable/custom_checkbox"
+            android:paddingLeft="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"/>
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/checkbox7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Воскресенье"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:button="@drawable/custom_checkbox"
+            android:paddingLeft="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"/>
+    </TableRow>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:rowCount="2"
+        android:columnCount="1">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_removeTask"
+            android:layout_width="312dp"
+            android:layout_height="48dp"
+            android:text="@string/DeleteAlarm"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/danger_button"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_addTask"
+            android:layout_width="312dp"
+            android:layout_height="48dp"
+            android:text="@string/SaveAlarm"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:background="@drawable/button_login" />
+    </GridLayout>
+</TableLayout>
